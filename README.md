@@ -13,13 +13,13 @@ Dự án này sử dụng ESP32 để đọc giá trị độ sáng tương đ�
 - `platformio.ini`: Cấu hình dự án.
 - `src/main.cpp`: Code chính đọc ADC và in ra serial.
 ### Sơ đồ kết nối:
-LDR:
+1. LDR:
 - Một chân LDR nối với 3.3V của ESP32.
 - Chân còn lại của LDR nối với một đầu của điện trở 10kΩ và đồng thời nối với chân GPIO34 của ESP32.
-Điện trở 10kΩ:
+2. Điện trở 10kΩ:
 - Một đầu nối với chân LDR và GPIO34 (như trên).
 - Đầu còn lại nối với GND của ESP32.
-ESP32:
+3. ESP32:
 - Chân 3.3V cung cấp nguồn cho LDR.
 - Chân GND nối với điện trở 10kΩ.
 - Chân GPIO34 nhận tín hiệu điện áp từ điểm giữa của mạch phân áp.
