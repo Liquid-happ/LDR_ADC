@@ -12,13 +12,25 @@ Dự án này sử dụng ESP32 để đọc giá trị độ sáng tương đ�
 ### Cấu trúc file
 - `platformio.ini`: Cấu hình dự án.
 - `src/main.cpp`: Code chính đọc ADC và in ra serial.
+### Sơ đồ kết nối:
+LDR:
+- Một chân LDR nối với 3.3V của ESP32.
+- Chân còn lại của LDR nối với một đầu của điện trở 10kΩ và đồng thời nối với chân GPIO34 của ESP32.
+Điện trở 10kΩ:
+- Một đầu nối với chân LDR và GPIO34 (như trên).
+- Đầu còn lại nối với GND của ESP32.
+ESP32:
+- Chân 3.3V cung cấp nguồn cho LDR.
+- Chân GND nối với điện trở 10kΩ.
+- Chân GPIO34 nhận tín hiệu điện áp từ điểm giữa của mạch phân áp.
 
 ### Hướng dẫn chạy
 1. Clone repo này.
 2. Mở trong VS Code với PlatformIO.
-3. Build và upload code.
-4. Mở Serial Monitor để xem giá trị.
-5. Mở Teleplot, kết nối serial port, và xem đồ thị (dữ liệu gửi dạng "light:value" hoặc "timestamp,light:value").
+3. Kết nối phần cứng 
+4. Build và upload code.
+5. Mở Serial Monitor để xem giá trị.
+6. Mở Teleplot, kết nối serial port, và xem đồ thị (dữ liệu gửi dạng "light:value" hoặc "timestamp,light:value").
 
 ### Ảnh chụp màn hình đồ thị
 Dưới đây là đồ thị cường độ sáng theo thời gian thực (giá trị cao hơn khi môi trường tối hơn):
