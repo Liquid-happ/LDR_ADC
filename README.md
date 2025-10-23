@@ -5,7 +5,7 @@ Dự án này sử dụng ESP32 để đọc giá trị độ sáng tương đ�
 
 ### Yêu cầu
 - Board ESP32 (ví dụ: ESP32 DevKit).
-- LDR nối với mạch phân áp (10kΩ resistor) đến GPIO34.
+- LDR nối với mạch phân áp (10kΩ resistor) đến GPIO.
 - VS Code với extension PlatformIO và Teleplot.
 - Arduino framework.
 
