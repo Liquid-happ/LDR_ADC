@@ -35,7 +35,7 @@ Dự án này sử dụng ESP32 để đọc giá trị độ sáng tương đ�
 ### Ảnh chụp màn hình đồ thị
 Dưới đây là đồ thị cường độ sáng theo thời gian thực (giá trị cao hơn khi môi trường tối hơn):
 
-![Đồ thị ánh sáng từ Teleplot](LDR_ADC.png)
+![Đồ thị ánh sáng từ Teleplot](images/LDR_ADC.png)
 
 ### Lưu ý
 - Giá trị ADC phụ thuộc vào độ sáng: Thử che LDR để thấy thay đổi.
